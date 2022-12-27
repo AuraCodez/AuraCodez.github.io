@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<body bgcolor="#FFFFE0">
+<body bgcolor="#FFFFE0" >
 <html>
 <head>
 <style>
+    body{
+        scroll-behavior: smooth; /*scrolls through website smoothly when navbar clicked*/
+    }
+
+   
   #ProgrammingLanguages {
     text-align:center
   }
@@ -10,6 +15,33 @@
   #Frameworks {
     text-align:center
   }
+
+  nav {
+    background-color:"#FFFFE0";
+    color: #fff;
+  }
+
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+  nav li {
+    flex: 1;
+    text-align: center;
+    }
+
+  
+  nav a {
+    font-size: 25px;
+    color: purple;
+    text-decoration: none
+  }
+  
+
+  
 h1 {text-align: center;}
 h2 {text-align: center;}
 h3 {text-align: center;}
@@ -20,6 +52,17 @@ div {text-align: center;}
 </style>
 </head>
 <body>
+
+  <nav>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#ProgrammingLanguages">Programming Languages</a></li>
+      <li><a href="#Frameworks">Frameworks/Libraries/Tools</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul> 
+  </nav>
+
+  
 
 <h1 style ="color:lightskyblue; font-size: 40px;">Welcome to my portfolio website!</h1>
 <p style = "font-size: 20px;">I am Ryan, a current second year computer science student at York University. I am now pursuing a career as a Software Developer/Engineer.</p>
