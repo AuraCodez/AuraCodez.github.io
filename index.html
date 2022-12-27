@@ -5,9 +5,36 @@
 
   <head>
     <style>
+      a.wrapper {
+        position: relative;
+        display: inline-block;
+      }
+
+      div.title {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 224, 0.75);
+        color: black;
+        padding: 0.5em;
+        text-align: center;
+      }
+
+      a.wrapper:hover div.title {
+        display: block;
+      }
+
+      a.wrapper:hover div.title {
+        display: block;
+      }
+
+
       body {
         scroll-behavior: smooth;
-        
+
       }
 
       #ProgrammingLanguages {
@@ -105,22 +132,84 @@
     <section id="ProgrammingLanguages">
 
       <h4 style="color: #3112FC; font-size: 32px">Programming Languages</h4>
-      <img src="src/javaLogo.png" alt="javaLogo" width="200" height="200">
-      <img src="src/pythonLogo.png" alt="pythonLogo" width="200" height="200">
-      <img src="src/kotlinLogo2.png" alt="kotlinLogo" width="200" height="200">
-      <img src="src/C.png" alt="cLogo" width="200" height="200">
-      <img src="src/cssHTML.png" alt="csshtmlLogo" width="200" height="200">
+      <a class = "wrapper">
+        <img src="src/javaLogo.png" alt="javaLogo" width="200" height="200">
+        <div class="title">
+          <h1>Java</h1>
+        </div>
+
+      </a>
+      <a class = "wrapper">
+        <img src="src/pythonLogo.png" alt="pythonLogo" width="200" height="200">
+        <div class ="title">
+          <h1>Python</h1>
+        </div>
+      </a>
+      <a class = "wrapper">
+        <img src="src/kotlinLogo2.png" alt="kotlinLogo" width="200" height="200">
+        <div class = "title">
+          <h1>Kotlin</h1>
+        </div>
+
+      </a>
+      <a class = "wrapper">
+        <img src="src/C.png" alt="cLogo" width="200" height="200">
+        <div class = "title">
+          <h1>C</h1>
+        </div>
+
+      </a>
+
+      <a class = "wrapper">
+        <img src="src/cssHTML.png" alt="csshtmlLogo" width="200" height="200">
+        <div class = "title">
+          <h1>HTML and CSS</h1>
+        </div>
+      </a>
+      
 
     </section>
 
     <section id="Frameworks">
       <h5 style="color: #3112FC; font-size: 32px">Frameworks/Libraries/Tools</h5>
-      <img src="src/androidStudio.png" alt="androidLogo" width="200" height="200">
-      <img src="src/Pygame_logo.svg.png" alt="pygameLogo" width="285" height="200">
-      <img src="src/Git-Icon-1788C.png" alt="gitLogo" width="200" height="200">
-      <img src="src/Github-desktop-logo-symbol.svg.png" alt="gDesktop" width="200" height="200">
-      <img src="src/JavaFX_Logo.png" alt="javaFX" width="200" height="200">
-      <img src="src/1 LTZdOC44Vd8C178qUj5UHg.png" alt="discordPY" width="260" height="200">
+      <a class="wrapper">
+        <img src="src/androidStudio.png" alt="androidLogo" width="200" height="200">
+        <div class="title">
+          <h1>Android Studio</h1>
+        </div>
+      </a>
+      <a class="wrapper">
+        <img src="src/Pygame_logo.svg.png" alt="pygameLogo" width="285" height="200">
+        <div class="title">
+          <h1>Pygame</h1>
+        </div>
+
+      </a>
+      <a class="wrapper">
+        <img src="src/Git-Icon-1788C.png" alt="gitLogo" width="200" height="200">
+        <div class="title">
+          <h1>Git</h1>
+        </div>
+
+      </a>
+      <a class="wrapper">
+        <img src="src/Github-desktop-logo-symbol.svg.png" alt="gDesktop" width="200" height="200">
+        <div class="title">
+          <h1>Github Desktop</h1>
+        </div>
+      </a>
+      <a class="wrapper">
+        <img src="src/JavaFX_Logo.png" alt="javaFX" width="200" height="200">
+        <div class="title">
+          <h1>JavaFX</h1>
+        </div>
+      </a>
+      <a class="wrapper">
+        <img src="src/1 LTZdOC44Vd8C178qUj5UHg.png" alt="discordPY" width="260" height="200">
+        <div class="title">
+          <h1>Discord.py</h1>
+        </div>
+      </a>
     </section>
 
 
