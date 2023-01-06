@@ -5,6 +5,35 @@
 
   <head>
     <style>
+      nav {
+        margin: 0px;
+        border-width: 1px;
+        background-color: antiquewhite;
+        border-style: double;
+        border-color: darkblue;
+
+      }
+
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        border: 0px solid blueviolet;
+        flex: 1;
+        text-align: center;
+      }
+
+
+      nav a {
+        font-size: 25px;
+        color: black;
+        text-decoration: none
+      }
+
       a.wrapper {
         position: relative;
         display: inline-block;
@@ -43,6 +72,11 @@
         text-align: center
       }
 
+      body {
+        margin: 0px;
+      }
+
+
       #Frameworks {
         text-align: center
       }
@@ -51,35 +85,14 @@
         text-align: center
       }
 
-      nav {
-        background-color: "#FFFFE0";
-        color: #fff;
-      }
-
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-      }
-
-      nav li {
-        flex: 1;
-        text-align: center;
-      }
-
-
-      nav a {
-        font-size: 25px;
-        color: purple;
-        text-decoration: none
-      }
-
 
 
       h1 {
-        text-align: center;
+        color: #3112FC;
+        font-size: 40px;
+        text-align: center
       }
+
 
       h2 {
         text-align: center;
@@ -95,6 +108,11 @@
 
       h5 {
         text-align: center;
+      }
+
+      h6 {
+        text-align: center;
+        font-size: 20px;
       }
 
       p {
@@ -114,15 +132,32 @@
         bottom: 0;
         right: 0;
       }
+
+      #typewriter {
+        animation: typewriter 3s;
+        animation-delay: 0.1s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes typewriter {
+        from {
+          content: 'Welcome to my portfolio website!';
+        }
+
+        to {
+          content: 'Welcome to my portfolio website! ';
+        }
+      }
     </style>
+
   </head>
 
 
   <body>
-
     <nav>
       <ul>
-        <li><a href="https://drive.google.com/file/d/1eswfnvcdqUcci1PE7QXzlzgqJLVgayGn/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Resume</a></li>
+        <li><a href="https://drive.google.com/file/d/1eswfnvcdqUcci1PE7QXzlzgqJLVgayGn/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">My Resume</a></li>
         <li><a href="#ProgrammingLanguages">Programming Languages</a></li>
         <li><a href="#Frameworks">Frameworks/Libraries/Tools</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -130,7 +165,8 @@
     </nav>
 
 
-    <h1 style="color:#3112FC; font-size: 40px;">Welcome to my portfolio website!</h1>
+
+    <h1 id = "typewriter" style="color:#3112FC; font-size: 40px;">Welcome to my portfolio website!</h1>
     <p style="font-size: 20px;">I am Ryan, a current second year computer science student at York University. I am now
       pursuing a career as a Software Developer/Engineer.</p>
     <p style="font-size: 20px;">I enjoy developing things in various programming languages like Python and Java. I
@@ -141,38 +177,65 @@
         class="bolded">ryan.lolyork@gmail.com</span></p>
     <div style="font-size: 20px;">Have a look at my portfolio below.</div>
 
+    <script>
+      var typewriter = document.getElementById("typewriter");
+
+      typewriter.innerHTML = "";
+
+      var text = "Welcome to my portfolio website!";
+
+      var typeSpeed = 100;
+
+      var i = 0;
+
+      function type() {
+        if (i < text.length) {
+          typewriter.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, typeSpeed);
+        }
+      }
+
+      type();
+    </script>
+
+
+
+
+
+
     <section id="ProgrammingLanguages">
 
       <h4 style="color: #3112FC; font-size: 32px">Programming Languages</h4>
       <a class="wrapper">
         <img src="src/javaLogo.png" alt="javaLogo" width="200" height="200">
         <div class="title">
-          <h1>Java</h1>
+          <h6>Java</h6>
         </div>
 
       </a>
       <a class="wrapper">
         <img src="src/pythonLogo.png" alt="pythonLogo" width="200" height="200">
         <div class="title">
-          <h1>Python</h1>
+          <h6>Python</h6>
         </div>
       </a>
       <a class="wrapper">
         <img src="src/kotlinLogo2.png" alt="kotlinLogo" width="200" height="200">
         <div class="title">
-          <h1>Kotlin</h1>
+          <h6>Kotlin</h6>
         </div>
       </a>
       <a class="wrapper">
         <img src="src/sql.png" alt="sqllogo" width="200" height="200">
         <div class="title">
-          <h1>Knowledge of SQL commands.</h1>
+          <h6>Knowledge of SQL commands.</h6>
         </div>
       </a>
       <a class="wrapper">
         <img src="src/C.png" alt="cLogo" width="200" height="200">
         <div class="title">
-          <h1>C</h1>
+          <h6>C</h6>
         </div>
 
       </a>
@@ -180,7 +243,7 @@
       <a class="wrapper">
         <img src="src/cssHTML.png" alt="csshtmlLogo" width="200" height="200">
         <div class="title">
-          <h1>HTML and CSS</h1>
+          <h6>HTML and CSS</h6>
         </div>
       </a>
 
@@ -192,39 +255,39 @@
       <a class="wrapper">
         <img src="src/androidStudio.png" alt="androidLogo" width="200" height="200">
         <div class="title">
-          <h1>Android Studio</h1>
+          <h6>Android Studio</h6>
         </div>
       </a>
       <a class="wrapper">
         <img src="src/Pygame_logo.svg.png" alt="pygameLogo" width="285" height="200">
         <div class="title">
-          <h1>Pygame</h1>
+          <h6>Pygame</h6>
         </div>
 
       </a>
       <a class="wrapper">
         <img src="src/Git-Icon-1788C.png" alt="gitLogo" width="200" height="200">
         <div class="title">
-          <h1>Git</h1>
+          <h6>Git</h6>
         </div>
 
       </a>
       <a class="wrapper">
         <img src="src/Github-desktop-logo-symbol.svg.png" alt="gDesktop" width="200" height="200">
         <div class="title">
-          <h1>Github Desktop</h1>
+          <h6>Github Desktop</h6>
         </div>
       </a>
       <a class="wrapper">
         <img src="src/JavaFX_Logo.png" alt="javaFX" width="200" height="200">
         <div class="title">
-          <h1>JavaFX/Java Swing</h1>
+          <h6>JavaFX/Java Swing</h6>
         </div>
       </a>
       <a class="wrapper">
         <img src="src/1 LTZdOC44Vd8C178qUj5UHg.png" alt="discordPY" width="260" height="200">
         <div class="title">
-          <h1>Discord.py</h1>
+          <h6>Discord.py</h6>
         </div>
       </a>
     </section>
@@ -260,7 +323,8 @@
         <p style="font-size: 18px;">Developed an number guessing game using android studio. User has to guess the number
           between a range of numbers and has three different modes of easy medium and hard.</p>
         <p><a href="https://github.com/AuraCodez/guessthenumber/" target="_blank" rel="noopener noreferrer">View
-            code</a> | <a href="https://imgur.com/a/VApzeWd" target="_blank" rel="noopener noreferrer" >Video Demo</a> </p>
+            code</a> | <a href="https://imgur.com/a/VApzeWd" target="_blank" rel="noopener noreferrer">Video Demo</a>
+        </p>
       </article>
 
       <article>
@@ -273,9 +337,11 @@
 
       <article>
         <h3 style="color:teal; font-size: 28px;">5. Dodging Things</h3>
-        <p style="font-size: 18px;">Created a Pygame game featuring a player character that can move, jump, and detect collisions, as well as enemies
-and power-ups.</p>
-        <p style ="font-size:18px;">User must avoid getting hit by monsters, character can shoot soccer or basketballs to destroy monsters.</p>
+        <p style="font-size: 18px;">Created a Pygame game featuring a player character that can move, jump, and detect
+          collisions, as well as enemies
+          and power-ups.</p>
+        <p style="font-size:18px;">User must avoid getting hit by monsters, character can shoot soccer or basketballs to
+          destroy monsters.</p>
         <p><a href="https://github.com/AuraCodez/DodgingThings/" target="_blank" rel="noopener noreferrer">View code</a>
           | <a href="#">Video Demo</a> </p>
       </article>
@@ -287,15 +353,14 @@ and power-ups.</p>
     <section id="resume">
       <h2 style="color:#3112FC; font-size: 32px;"></h2>
       <a class="wrapper">
-        <a href="https://drive.google.com/file/d/1eswfnvcdqUcci1PE7QXzlzgqJLVgayGn/view?usp=sharing" 
-          target="_blank" rel="noopener noreferrer"><img src="src/resume-logo.png" alt="Resume" width="75"
-            height="75"></a>
+        <a href="https://drive.google.com/file/d/1eswfnvcdqUcci1PE7QXzlzgqJLVgayGn/view?usp=sharing" target="_blank"
+          rel="noopener noreferrer"><img src="src/resume-logo.png" alt="Resume" width="75" height="75"></a>
       </a>
 
-      <a class ="wrapper">
-        <a href ="https://github.com/AuraCodez"target="_blank" rel="noopener noreferrer"><img src="src/index.png" alt="git" width="75"
-          height="75"></a>
-          </a>
+      <a class="wrapper">
+        <a href="https://github.com/AuraCodez" target="_blank" rel="noopener noreferrer"><img src="src/index.png"
+            alt="git" width="75" height="75"></a>
+      </a>
 
 
     </section>
