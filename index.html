@@ -148,9 +148,27 @@
       }
 
       #typewriter {
-        animation: typewriter 3s;
-        animation-delay: 0.1s;
+        animation: typewriter 0.5s;
+        animation-delay: 0.01s;
         animation-iteration-count: infinite;
+      }
+
+
+      .fade-in {
+        animation: fadein 0.4s ease-in-out;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
       }
 
       @keyframes typewriter {
@@ -170,7 +188,8 @@
   <body>
     <nav>
       <ul>
-        <li><a href="https://drive.google.com/file/d/1TjEsbi3ySWTHJxLQxvgsu6g8kAgoj82U/view?usp=sharing">My Resume</a></li>
+        <li><a href="https://drive.google.com/file/d/1TjEsbi3ySWTHJxLQxvgsu6g8kAgoj82U/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">My Resume</a></li>
         <li><a href="#ProgrammingLanguages">Programming Languages</a></li>
         <li><a href="#Frameworks">Frameworks/Libraries/Tools</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -180,6 +199,9 @@
 
 
     <h1 id="typewriter" style="color:#3112FC; font-size: 40px;">Welcome to my portfolio website!</h1>
+
+
+
     <p style="font-size: 20px;">I am Ryan, a current second year computer science student at York University. I am now
       pursuing a career as a Software Developer/Engineer.</p>
     <p style="font-size: 20px;">I enjoy developing things in various programming languages like Python and Java. I
@@ -188,7 +210,19 @@
       philosophy and exploring the world.</p>
     <p style="font-size: 20px;">If you want to get in touch with me email me 👉 <span
         class="bolded">ryan.lolyork@gmail.com</span></p>
-    <div style="font-size: 20px;">Have a look at my portfolio below.</div>
+    <p style="font-size: 20px;">Have a look at my portfolio below.</p>
+
+    <script>
+      window.onload = function () {
+          var paragraphs = document.getElementsByTagName("p");
+          for (var i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].classList.add("fade-in");
+          }
+        }
+
+    </script>
+
+
 
     <script>
       var typewriter = document.getElementById("typewriter");
@@ -197,7 +231,7 @@
 
       var text = "Welcome to my portfolio website!";
 
-      var typeSpeed = 100;
+      var typeSpeed = 50;
 
       var i = 0;
 
@@ -206,14 +240,11 @@
           typewriter.innerHTML += text.charAt(i);
           i++;
           setTimeout(type, typeSpeed);
-        }
+        } 
       }
 
       type();
     </script>
-
-
-
 
 
 
@@ -366,7 +397,7 @@
     <section id="resume">
       <h2 style="color:#3112FC; font-size: 32px;"></h2>
       <a class="wrapper">
-          <a href="https://drive.google.com/file/d/1TjEsbi3ySWTHJxLQxvgsu6g8kAgoj82U/view?usp=sharing" target="_blank"
+        <a href="https://drive.google.com/file/d/1TjEsbi3ySWTHJxLQxvgsu6g8kAgoj82U/view?usp=sharing" target="_blank"
           rel="noopener noreferrer"><img src="src/resume-logo.png" alt="Resume" width="75" height="75"></a>
       </a>
 
