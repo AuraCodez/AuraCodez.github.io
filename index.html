@@ -129,8 +129,14 @@
         font-size: 20px;
       }
 
+      .teal-header {
+        color: teal;
+        font-size: 28px;
+      }
+
       p {
         text-align: center;
+        font-size: 20px;
       }
 
       div {
@@ -153,15 +159,19 @@
         animation-iteration-count: infinite;
       }
 
+      .p1 {
+        font-size: 18px;
+      }
 
       .fade-in {
-        animation: fadein 0.4s ease-in-out;
+        animation: fade-in 0.4s ease-in-out;
         animation-delay: 2s;
         animation-fill-mode: forwards;
         opacity: 0;
       }
 
-      @keyframes fadein {
+
+      @keyframes fade-in {
         from {
           opacity: 0;
         }
@@ -200,28 +210,25 @@
 
     <h1 id="typewriter" style="color:#3112FC; font-size: 40px;">Welcome to my portfolio website!</h1>
 
-
-
-    <p style="font-size: 20px;">I am Ryan, a current second year computer science student at York University. I am now
+    <p class="intro">I am Ryan, a current second year computer science student at York University. I am now
       pursuing a career as a Software Developer/Engineer.</p>
-    <p style="font-size: 20px;">I enjoy developing things in various programming languages like Python and Java. I
+    <p class="intro">I enjoy developing things in various programming languages like Python and Java. I
       always want to learn new things and keep up with the latest technologies.</p>
-    <p style="font-size: 20px;">My hobbies and leisure activites include basketball, soccer, gaming,
+    <p class="intro">My hobbies and leisure activites include basketball, soccer, gaming,
       philosophy and exploring the world.</p>
-    <p style="font-size: 20px;">If you want to get in touch with me email me 👉 <span
-        class="bolded">ryan.lolyork@gmail.com</span></p>
-    <p style="font-size: 20px;">Have a look at my portfolio below.</p>
+    <p class="intro">If you want to get in touch with me email me 👉 <span class="bolded">ryan.lolyork@gmail.com</span>
+    </p>
+    <p class="intro">Have a look at my portfolio below.</p>
 
     <script>
       window.onload = function () {
-          var paragraphs = document.getElementsByTagName("p");
-          for (var i = 0; i < paragraphs.length; i++) {
-            paragraphs[i].classList.add("fade-in");
-          }
+        var paragraphs = document.getElementsByClassName("intro");
+        for (var i = 0; i < paragraphs.length; i++) {
+          paragraphs[i].classList.add("fade-in");
         }
+      }
 
     </script>
-
 
 
     <script>
@@ -240,7 +247,7 @@
           typewriter.innerHTML += text.charAt(i);
           i++;
           setTimeout(type, typeSpeed);
-        } 
+        }
       }
 
       type();
@@ -342,52 +349,67 @@
 
 
       <article>
-        <h3 style="color:teal; font-size: 28px;">1. Grocery Store</h3>
-        <p style="font-size: 18px;">Developed a Java-based store management system using object-oriented programming
-          principles to help store owners track item inventories and employee information along with other useful
-          features.</p>
-        <p style="font-size: 18px;">GUI interface created using Java Swing</p>
-        <p><a href="https://github.com/AuraCodez/GroceryStore/" target="_blank" rel="noopener noreferrer">View code</a>
-          | <a href="#">Video Demo</a></p>
+        <h3 class="teal-header">1. Grocery Store</h3>
+        <p class="p1">Developed a Java-based store management system using object-oriented programming principles to
+          help store
+          owners track item inventories and employee information along with other useful features.</p>
+        <p class="p1">GUI interface created using Java Swing</p>
+        <p class="p1">
+          <a href="https://github.com/AuraCodez/GroceryStore/" target="_blank" rel="noopener noreferrer">View Code</a>
+          | <a href="#">Video Demo</a>
+        </p>
+
       </article>
 
       <article>
-        <h3 style="color:teal; font-size: 28px;">2. General Discord Bot</h3>
-        <p style="font-size: 18px;">This discord bot is designed to provide a range of useful features to optimize and
+        <h3 class="teal-header">2. General Discord Bot</h3>
+        <p class="p1">This discord bot is designed to provide a range of useful features to optimize and
           enhance your Discord server experience.</p>
-        <p style="font-size: 18px;">Some features include swear filtering, generate random facts and quotes and some
+        <p class="p1">Some features include swear filtering, generate random facts and quotes and some
           basic unit conversion.</p>
-        <p><a href="https://github.com/AuraCodez/DiscordBotGeneral/" target="_blank" rel="noopener noreferrer">View
-            code</a> | <a href="#">Video Demo</a></p>
-      </article>
-
-
-      <article>
-        <h3 style="color:teal; font-size: 28px;">3. Guess The Number</h3>
-        <p style="font-size: 18px;">Developed an number guessing game using android studio. User has to guess the number
-          between a range of numbers and has three different modes of easy medium and hard.</p>
-        <p><a href="https://github.com/AuraCodez/guessthenumber/" target="_blank" rel="noopener noreferrer">View
-            code</a> | <a href="https://imgur.com/a/VApzeWd" target="_blank" rel="noopener noreferrer">Video Demo</a>
+        <p class="p1">
+          <a href="https://github.com/AuraCodez/DiscordBotGeneral/" target="_blank" rel="noopener noreferrer">View
+            Code</a>
+          | <a href="#">Video Demo</a>
         </p>
       </article>
 
+
       <article>
-        <h3 style="color:teal; font-size: 28px;">4. Unit Converter App</h3>
-        <p style="font-size: 18px;">Developed an Android app in Android Studio that allows users to convert units and
-          currencies commonly used in daily life.</p>
-        <p><a href="https://github.com/AuraCodez/UnitConverterApp/" target="_blank" rel="noopener noreferrer">View
-            code</a> | <a href="#">Video Demo</a> </p>
+        <h3 class="teal-header">3. Guess The Number</h3>
+        <p class="p1">Developed an number guessing game using android studio. User has to guess the
+          number
+          between a range of numbers and has three different modes of easy medium and hard.</p1>
+        <p class="p1"><a href="https://github.com/AuraCodez/guessthenumber/" target="_blank"
+            rel="noopener noreferrer">View
+            code</a> | <a href="https://imgur.com/a/VApzeWd" target="_blank" rel="noopener noreferrer">Video Demo</a>
+          </p1>
       </article>
 
       <article>
-        <h3 style="color:teal; font-size: 28px;">5. Dodging Things</h3>
-        <p style="font-size: 18px;">Created a Pygame game featuring a player character that can move, jump, and detect
+        <h3 class="teal-header">4. Conversion App</h3>
+        <p class="p1">Created an Android app using Android Studio, which is programmed in Kotlin and Java. The app
+          allows users to convert
+          units and currencies commonly used in daily life.</p>
+        <p class="p1">Additionally, I am working on adding a Morse Code Converter feature to the app as a bonus feature.
+        </p>
+        <p class="p1"><a href="https://github.com/AuraCodez/UnitConverterApp/" target="_blank"
+            rel="noopener noreferrer">View
+            Code</a> | <a href="#">Video Demo</a> </p>
+      </article>
+
+      <article>
+        <h3 class="teal-header">5. Dodging Things</h3>
+        <p class="p1">Created a Pygame game featuring a player character that can move, jump, and detect
           collisions, as well as enemies
           and power-ups.</p>
-        <p style="font-size:18px;">User must avoid getting hit by monsters, character can shoot soccer or basketballs to
-          destroy monsters.</p>
-        <p><a href="https://github.com/AuraCodez/DodgingThings/" target="_blank" rel="noopener noreferrer">View code</a>
-          | <a href="#">Video Demo</a> </p>
+        <p class="p1">User must avoid getting hit by monsters, character can shoot soccer or basketballs
+          to
+          destroy monsters and score points.</p>
+        <p class="p1"><a href="https://github.com/AuraCodez/DodgingThings/" target="_blank"
+            rel="noopener noreferrer">View
+            Code</a>
+          | <a href="#">Video Demo</a> </pp>
       </article>
 
 
