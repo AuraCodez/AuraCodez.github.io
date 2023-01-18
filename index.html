@@ -76,8 +76,9 @@
       }
 
 
-      button.viewCode a {
-        display: block;
+      button.viewCode {
+        position: relative;
+        display: inline-block;
         width: 200px;
         height: 40px;
         line-height: 40px;
@@ -89,12 +90,21 @@
         border: 2px solid #333;
         letter-spacing: 2px;
         text-align: center;
-        position: relative;
         transition: all .35s;
+      }
+
+      button.viewCode a {
+        position: absolute;
+        color:white;
+        text-decoration: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         z-index: 1;
       }
 
-      button.viewCode a:after {
+      button.viewCode:after {
         position: absolute;
         content: "";
         top: 0;
@@ -103,36 +113,42 @@
         height: 100%;
         background: #00A896;
         transition: all .35s;
-        z-index: 2;
+        z-index: 0;
       }
 
-      button.viewCode a:hover {
-        color: #fff;
-      }
-
-      button.viewCode a:hover:after {
+      button.viewCode:hover:after {
         width: 100%;
+      }
+
+      button.viewDemo {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        background: #102039;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        transition: all .35s;
       }
 
       button.viewDemo a {
-        display: block;
-        width: 200px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 18px;
-        background: #102039;
-        font-family: sans-serif;
+        position: absolute;
+        color:white;
         text-decoration: none;
-        color: #fff;
-        border: 2px solid #333;
-        letter-spacing: 2px;
-        text-align: center;
-        position: relative;
-        transition: all .35s;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         z-index: 1;
       }
 
-      button.viewDemo a:after {
+      button.viewDemo:after {
         position: absolute;
         content: "";
         top: 0;
@@ -141,17 +157,12 @@
         height: 100%;
         background: #00A896;
         transition: all .35s;
-        z-index: 2;
+        z-index: 0;
       }
 
-      button.viewDemo a:hover {
-        color: #fff;
-      }
-
-      button.viewDemo a:hover:after {
+      button.viewDemo:hover:after {
         width: 100%;
       }
-
 
       a.wrapper:hover div.title {
         display: block;
