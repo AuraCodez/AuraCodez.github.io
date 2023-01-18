@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<body bgcolor="#FAF9F6"> 
+<body bgcolor="#FAF9F6">
   <html>
 
   <head>
@@ -27,7 +27,7 @@
       }
 
       .intro {
-        text-color: black
+        color: black;
       }
 
 
@@ -75,27 +75,82 @@
         display: block;
       }
 
-      .button-container button {
+
+      button.viewCode a {
+        display: block;
         width: 200px;
-        height: 45px;
-        background: #102039;;
-        color: #fff;
-        border: none;
-        text-align: center;
+        height: 40px;
+        line-height: 40px;
         font-size: 18px;
-        transition: all 0.3s ease-in-out;
-      }
-
-      .button-container button:hover {
-        background: #00A896;
-      }
-
-      .button-container button a {
-        color: #fff;
+        background: #102039;
+        font-family: sans-serif;
         text-decoration: none;
+        color: #fff;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        z-index: 1;
       }
 
+      button.viewCode a:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #00A896;
+        transition: all .35s;
+        z-index: 2;
+      }
 
+      button.viewCode a:hover {
+        color: #fff;
+      }
+
+      button.viewCode a:hover:after {
+        width: 100%;
+      }
+
+      button.viewDemo a {
+        display: block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        background: #102039;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        z-index: 1;
+      }
+
+      button.viewDemo a:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #00A896;
+        transition: all .35s;
+        z-index: 2;
+      }
+
+      button.viewDemo a:hover {
+        color: #fff;
+      }
+
+      button.viewDemo a:hover:after {
+        width: 100%;
+      }
 
 
       a.wrapper:hover div.title {
