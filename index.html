@@ -83,7 +83,7 @@
         height: 40px;
         line-height: 40px;
         font-size: 18px;
-        background: #102039;
+        background:  #FAF9F6;
         font-family: sans-serif;
         text-decoration: none;
         color: #fff;
@@ -95,7 +95,7 @@
 
       button.viewCode a {
         position: absolute;
-        color:white;
+        color: #9e9e9e;
         text-decoration: none;
         top: 0;
         left: 0;
@@ -111,9 +111,14 @@
         left: 0;
         width: 0;
         height: 100%;
-        background: #00A896;
+        background: #00A895;
         transition: all .35s;
         z-index: 0;
+        color: white;
+      }
+
+      button a:hover {
+        color: #fff;
       }
 
       button.viewCode:hover:after {
@@ -127,7 +132,7 @@
         height: 40px;
         line-height: 40px;
         font-size: 18px;
-        background: #102039;
+        background: #FAF9F6;;
         font-family: sans-serif;
         text-decoration: none;
         color: #fff;
@@ -139,7 +144,7 @@
 
       button.viewDemo a {
         position: absolute;
-        color:white;
+        color: #9e9e9e;
         text-decoration: none;
         top: 0;
         left: 0;
@@ -150,15 +155,23 @@
 
       button.viewDemo:after {
         position: absolute;
+        color: white;
         content: "";
         top: 0;
         left: 0;
         width: 0;
         height: 100%;
-        background: #00A896;
+        background: #00A895;
         transition: all .35s;
         z-index: 0;
       }
+
+
+      button.viewDemo a:hover {
+        color: white;
+      }
+
+  
 
       button.viewDemo:hover:after {
         width: 100%;
@@ -311,16 +324,6 @@
     <p class="intro">If you want to get in touch with me email me 👉 <span class="bolded">ryan.lolyork@gmail.com</span>
     </p>
     <p class="intro">Have a look at my portfolio below.</p>
-
-    <script>
-      window.onload = function () {
-        var paragraphs = document.getElementsByClassName("intro");
-        for (var i = 0; i < paragraphs.length; i++) {
-          paragraphs[i].classList.add("fade-in");
-        }
-      }
-
-    </script>
 
 
     <script>
