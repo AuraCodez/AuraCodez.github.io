@@ -83,7 +83,7 @@
         height: 40px;
         line-height: 40px;
         font-size: 18px;
-        background:  #FAF9F6;
+        background: #FAF9F6;
         font-family: sans-serif;
         text-decoration: none;
         color: #fff;
@@ -132,7 +132,8 @@
         height: 40px;
         line-height: 40px;
         font-size: 18px;
-        background: #FAF9F6;;
+        background: #FAF9F6;
+        ;
         font-family: sans-serif;
         text-decoration: none;
         color: #fff;
@@ -171,7 +172,7 @@
         color: white;
       }
 
-  
+
 
       button.viewDemo:hover:after {
         width: 100%;
@@ -321,9 +322,11 @@
       always want to learn new things and keep up with the latest technologies.</p>
     <p class="intro">My hobbies and leisure activites include basketball, soccer, gaming,
       philosophy and exploring the world.</p>
-    <p class="intro">If you want to get in touch with me email me 👉 <span class="bolded">ryan.lolyork@gmail.com</span>
+    <p class="bolded" style="font-size: 25px;">If you want to get in touch with me email me 👉 <span
+        class="bolded">ryan.lolyork@gmail.com</span>
     </p>
-    <p class="intro">Have a look at my portfolio below.</p>
+
+
 
 
     <script>
@@ -346,6 +349,19 @@
       }
 
       type();
+    </script>
+
+    <script>
+      window.onload = function () {
+        var faded = document.getElementsByClassName("bolded");
+
+        for (var i = 0; i < faded.length; i++) {
+          faded[i].classList.add("fade-in");
+        }
+
+      }
+
+
     </script>
 
 
@@ -448,7 +464,9 @@
         <p class="p1">Developed a Java-based store management system using object-oriented programming principles to
           help store
           owners track item inventories and employee information along with other useful features.</p>
-        <p class="p1">GUI interface created using Java Swing</p>
+        <p class="p1">A graphical user interface (GUI) that was developed using the Java Swing framework, but I am
+          planning to have it
+          being transitioned to the JavaFX in the near future.</p>
         <div class="button-container">
           <button class="viewCode">
             <a href="https://github.com/AuraCodez/GroceryStore/" target="_blank" rel="noopener noreferrer">View
