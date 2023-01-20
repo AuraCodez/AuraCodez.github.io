@@ -209,11 +209,9 @@
       }
 
 
-      #Frameworks {
-        text-align: center
-      }
 
-      #resume {
+
+      #Frameworks {
         text-align: center
       }
 
@@ -283,6 +281,7 @@
 
       .p1 {
         font-size: 18px;
+        text-align: left;
       }
 
       .fade-in {
@@ -363,50 +362,49 @@
 
 
       .container {
+        text-align: left;
         max-width: 850px;
-        padding-left:350px;
+        padding-left: 350px;
+        grid-column-gap: 60px;
+        grid-row-gap: 40px;
 
         margin-top: 80px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns with equal width */
         grid-template-rows: repeat(3, auto);
-        /* 3 rows with auto height */
       }
 
       .project-1 {
+
         grid-column: 1 / 2;
-        /* spans first column */
         grid-row: 1 / 2;
-        /* spans first row */
       }
 
       .project-2 {
         grid-column: 2 / 3;
-        /* spans second column */
         grid-row: 1 / 2;
-        /* spans first row */
       }
 
       .project-3 {
         grid-column: 1 / 2;
-        /* spans first column */
         grid-row: 2 / 3;
-        /* spans second row */
       }
 
       .project-4 {
         grid-column: 2 / 3;
-        /* spans second column */
         grid-row: 2 / 3;
-        /* spans second row */
       }
 
       .project-5 {
+        margin-bottom:40px;
         grid-column: 1 / 2;
-        /* spans first column */
         grid-row: 3 / 4;
-        /* spans third row */
+      }
+
+      #resume {
+        position: absolute;
+        left: 0;
+        bottom: 1px;
       }
     </style>
 
@@ -416,9 +414,9 @@
   <body>
     <nav>
       <ul>
-        <li><a href="#Home">My Portfolio</a></li>
-        <li><a href="#ProgrammingLanguages">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Home">🏠My Portfolio</a></li>
+        <li><a href="#ProgrammingLanguages">🔧Skills</a></li>
+        <li><a href="#projects">📂 Current Projects</a></li>
       </ul>
     </nav>
 
@@ -633,9 +631,6 @@
               <a href="https://github.com/AuraCodez/guessthenumber/" target="_blank" rel="noopener noreferrer">View
                 Code</a>
             </button>
-            <button class="viewDemo">
-              <a href="https://imgur.com/a/VApzeWd" target="_blank" rel="noopener noreferrer">Video Demo</a>
-            </button>
           </div>
         </article>
       </div>
@@ -674,26 +669,7 @@
             </button>
 
           </div>
-        </article>
 
-
-
-
-
-        <section id="resume">
-          <h2 style="color:#3112FC; font-size: 32px;"></h2>
-          <a class="wrapper">
-            <a href="https://drive.google.com/file/d/1-tov9QvjA3-_lGZ9MHo6M-G2yDbC7Ida/view?usp=sharing" target="_blank"
-              rel="noopener noreferrer"><img src="src/resume-logo.png" alt="Resume" width="75" height="75"></a>
-          </a>
-
-          <a class="wrapper">
-            <a href="https://github.com/AuraCodez" target="_blank" rel="noopener noreferrer"><img src="src/index.png"
-                alt="git" width="75" height="75"></a>
-          </a>
-
-
-        </section>
 
 
   </body>
