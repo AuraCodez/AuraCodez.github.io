@@ -10,7 +10,7 @@
       nav {
         margin: 0px;
         border-width: 1px;
-        background-color: #1974D2;
+        background-color: #102039;
         border-style: double;
         border-color: darkblue;
 
@@ -230,6 +230,7 @@
 
       h2 {
         text-align: center;
+        margin-top: 120px;
       }
 
       h3 {
@@ -359,6 +360,54 @@
         color: white;
 
       }
+
+
+      .container {
+        max-width: 850px;
+        padding-left:350px;
+
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns with equal width */
+        grid-template-rows: repeat(3, auto);
+        /* 3 rows with auto height */
+      }
+
+      .project-1 {
+        grid-column: 1 / 2;
+        /* spans first column */
+        grid-row: 1 / 2;
+        /* spans first row */
+      }
+
+      .project-2 {
+        grid-column: 2 / 3;
+        /* spans second column */
+        grid-row: 1 / 2;
+        /* spans first row */
+      }
+
+      .project-3 {
+        grid-column: 1 / 2;
+        /* spans first column */
+        grid-row: 2 / 3;
+        /* spans second row */
+      }
+
+      .project-4 {
+        grid-column: 2 / 3;
+        /* spans second column */
+        grid-row: 2 / 3;
+        /* spans second row */
+      }
+
+      .project-5 {
+        grid-column: 1 / 2;
+        /* spans first column */
+        grid-row: 3 / 4;
+        /* spans third row */
+      }
     </style>
 
   </head>
@@ -368,8 +417,7 @@
     <nav>
       <ul>
         <li><a href="#Home">My Portfolio</a></li>
-        <li><a href="#ProgrammingLanguages">Programming Languages</a></li>
-        <li><a href="#Frameworks">Frameworks/Libraries/Tools</a></li>
+        <li><a href="#ProgrammingLanguages">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
       </ul>
     </nav>
@@ -390,11 +438,12 @@
 
 
 
-    <a href="https://drive.google.com/file/d/1-tov9QvjA3-_lGZ9MHo6M-G2yDbC7Ida/view" target="_blank" rel="noopener noreferrer" >
+    <a href="https://drive.google.com/file/d/1-tov9QvjA3-_lGZ9MHo6M-G2yDbC7Ida/view" target="_blank"
+      rel="noopener noreferrer">
       <div class="mybutton">RESUME</div>
     </a>
 
-    <a href="https://github.com/AuraCodez" target="_blank" rel="noopener noreferrer" >
+    <a href="https://github.com/AuraCodez" target="_blank" rel="noopener noreferrer">
       <div class="githubButton">GITHUB</div>
     </a>
 
@@ -441,34 +490,34 @@
 
     <section id="ProgrammingLanguages">
 
-      <h4 style="color: #3112FC; font-size: 32px">Programming Languages</h4>
+      <h4 style="color: #3112FC; font-size: 32px">💡Skills</h4>
       <a class="wrapper">
-        <img src="src/javaLogo.png" alt="javaLogo" width="150" height="150">
+        <img src="src/javaLogo.png" alt="javaLogo" width="100" height="100">
         <div class="title">
           <h6>Java</h6>
         </div>
 
       </a>
       <a class="wrapper">
-        <img src="src/pythonLogo.png" alt="pythonLogo" width="150" height="150">
+        <img src="src/pythonLogo.png" alt="pythonLogo" width="100" height="100">
         <div class="title">
           <h6>Python</h6>
         </div>
       </a>
       <a class="wrapper">
-        <img src="src/kotlinLogo2.png" alt="kotlinLogo" width="150" height="150">
+        <img src="src/kotlinLogo2.png" alt="kotlinLogo" width="100" height="100">
         <div class="title">
           <h6>Kotlin</h6>
         </div>
       </a>
       <a class="wrapper">
-        <img src="src/sql.png" alt="sqllogo" width="150" height="150">
+        <img src="src/sql.png" alt="sqllogo" width="100" height="100">
         <div class="title">
           <h6>Knowledge of SQL commands.</h6>
         </div>
       </a>
       <a class="wrapper">
-        <img src="src/C.png" alt="cLogo" width="150" height="150">
+        <img src="src/C.png" alt="cLogo" width="100" height="100">
         <div class="title">
           <h6>C</h6>
         </div>
@@ -476,7 +525,7 @@
       </a>
 
       <a class="wrapper">
-        <img src="src/cssHTML.png" alt="csshtmlLogo" width="150" height="150">
+        <img src="src/cssHTML.png" alt="csshtmlLogo" width="100" height="100">
         <div class="title">
           <h6>HTML and CSS</h6>
         </div>
@@ -486,41 +535,41 @@
     </section>
 
     <section id="Frameworks">
-      <h5 style="color: #3112FC; font-size: 32px">Frameworks/Libraries/Tools</h5>
+      <h5 style="color: #3112FC; font-size: 32px"></h5>
       <a class="wrapper">
-        <img src="src/androidStudio.png" alt="androidLogo" width="150" height="150">
+        <img src="src/androidStudio.png" alt="androidLogo" width="100" height="100">
         <div class="title">
           <h6>Android Studio</h6>
         </div>
       </a>
       <a class="wrapper">
-        <img src="src/Git-Icon-1788C.png" alt="gitLogo" width="150" height="150">
+        <img src="src/Git-Icon-1788C.png" alt="gitLogo" width="100" height="100">
         <div class="title">
           <h6>Git</h6>
         </div>
 
       </a>
       <a class="wrapper">
-        <img src="src/Github-desktop-logo-symbol.svg.png" alt="gDesktop" width="150" height="150">
+        <img src="src/Github-desktop-logo-symbol.svg.png" alt="gDesktop" width="100" height="100">
         <div class="title">
           <h6>Github Desktop</h6>
         </div>
       </a>
       <a class="wrapper">
-        <img src="src/JavaFX_Logo.png" alt="javaFX" width="150" height="150">
+        <img src="src/JavaFX_Logo.png" alt="javaFX" width="100" height="100">
         <div class="title">
           <h6>JavaFX/Java Swing</h6>
         </div>
       </a>
       <a class="wrapper">
-        <img src="src/1 LTZdOC44Vd8C178qUj5UHg.png" alt="discordPY" width="150" height="150">
+        <img src="src/1 LTZdOC44Vd8C178qUj5UHg.png" alt="discordPY" width="100" height="100">
         <div class="title">
           <h6>Discord.py</h6>
         </div>
       </a>
 
       <a class="wrapper">
-        <img src="src/Pygame_logo.svg.png" alt="pygameLogo" width="150" height="150">
+        <img src="src/Pygame_logo.svg.png" alt="pygameLogo" width="100" height="100">
         <div class="title">
           <h6>Pygame</h6>
         </div>
@@ -529,123 +578,122 @@
 
 
     <section id="projects">
-      <h2 style="color:#3112FC; font-size: 32px;">My Current Projects</h2>
-
-
-      <article>
-        <h3 class="teal-header">1. Grocery Store System</h3>
-        <p class="p1">Developed a Java-based store management system using object-oriented programming principles to
-          help store
-          owners track item inventories and employee information along with other useful features.</p>
-        <p class="p1">A graphical user interface (GUI) that was developed using the Java Swing framework, but I am
-          planning to have it
-          being transitioned to the JavaFX in the near future.</p>
-        <div class="button-container">
-          <button class="viewCode">
-            <a href="https://github.com/AuraCodez/GroceryStore/" target="_blank" rel="noopener noreferrer">View
-              Code</a>
-          </button>
-
-        </div>
-
-
-      </article>
-
-      <article>
-        <h3 class="teal-header">2. General Discord Bot</h3>
-        <p class="p1">This discord bot is designed to provide a range of useful features to optimize and
-          enhance your Discord server experience.</p>
-        <p class="p1">Some features include swear filtering, generate random facts and quotes and some
-          basic unit conversion.</p>
-        <div class="button-container">
-          <button class="viewCode">
-            <a href="https://github.com/AuraCodez/DiscordBotGeneral/" target="_blank" rel="noopener noreferrer">View
-              Code</a>
-          </button>
-
-        </div>
-
-
-      </article>
-
-
-      <article>
-        <h3 class="teal-header">3. Guess The Number</h3>
-        <p class="p1">Developed an number guessing game using android studio. User has to guess the
-          number
-          between a range of numbers and has three different modes of easy medium and hard.</p1>
-        <div class="button-container">
-          <button class="viewCode">
-            <a href="https://github.com/AuraCodez/guessthenumber/" target="_blank" rel="noopener noreferrer">View
-              Code</a>
-          </button>
-          <button class="viewDemo">
-            <a href="https://imgur.com/a/VApzeWd" target="_blank" rel="noopener noreferrer">Video Demo</a>
-          </button>
-        </div>
-      </article>
-
-      <article>
-        <h3 class="teal-header">4. Conversion App</h3>
-        <p class="p1">Created an Android app using Android Studio, which is programmed in Kotlin and Java (I have
-          versions for both). The app
-          allows users to convert
-          units and currencies commonly used in daily life.</p>
-        <p class="p1">Additionally, I am working on adding a Morse Code Converter feature to the app as a bonus feature.
-        </p>
-        <div class="button-container">
-          <button class="viewCode">
-            <a href="https://github.com/AuraCodez/UnitConverterApp/" target="_blank" rel="noopener noreferrer">View
-              Code</a>
-          </button>
-
-        </div>
-      </article>
-
-      <article>
-        <h3 class="teal-header">5. Dodging Things</h3>
-        <p class="p1">Created a Pygame game featuring a player character that can move, jump, and detect
-          collisions, as well as enemies
-          and power-ups.</p>
-        <p class="p1">User must avoid getting hit by monsters, character can shoot soccer or basketballs
-          to
-          destroy monsters and score points.</p>
-        <div class="button-container">
-          <button class="viewCode">
-            <a href="https://github.com/AuraCodez/DodgingThings/" target="_blank" rel="noopener noreferrer">View
-              Code</a>
-          </button>
-
-        </div>
-      </article>
-
-
-
-      <article>
-        <h3 class="teal-header">6. My Portfolio Website</h3>
-        <p class="p1">This is my portfolio website that I am working on. I learned how to do some CSS/HTML and
-          Javascript</p>
-        <p class="p1">I will keep updating this website and learn new ways to make it more fancy.</p>
-      </article>
-
-
+      <h2 style="color:#3112FC; font-size: 32px;">📂 Projects</h2>
 
     </section>
 
-    <section id="resume">
-      <h2 style="color:#3112FC; font-size: 32px;"></h2>
-      <a class="wrapper">
-        <a href="https://drive.google.com/file/d/1-tov9QvjA3-_lGZ9MHo6M-G2yDbC7Ida/view?usp=sharing" target="_blank"
-          rel="noopener noreferrer"><img src="src/resume-logo.png" alt="Resume" width="75" height="75"></a>
-      </a>
 
-      <a class="wrapper">
-        <a href="https://github.com/AuraCodez" target="_blank" rel="noopener noreferrer"><img src="src/index.png"
-            alt="git" width="75" height="75"></a>
-      </a>
+    <div class="container">
+      <div class="project-1">
+        <article>
+          <h3 class="teal-header">Grocery Store System</h3>
+          <p class="p1">Developed a Java-based store management system using object-oriented programming principles to
+            help store
+            owners track item inventories and employee information along with other useful features.</p>
+          <p class="p1">A graphical user interface (GUI) that was developed using the Java Swing framework, but I am
+            planning to have it
+            being transitioned to the JavaFX in the near future.</p>
+          <div class="button-container">
+            <button class="viewCode">
+              <a href="https://github.com/AuraCodez/GroceryStore/" target="_blank" rel="noopener noreferrer">View
+                Code</a>
+            </button>
+
+          </div>
 
 
-    </section>
+        </article>
+      </div>
+      <div class="project-2">
+        <article>
+          <h3 class="teal-header">General Discord Bot</h3>
+          <p class="p1">This discord bot is designed to provide a range of useful features to optimize and
+            enhance your Discord server experience.</p>
+          <p class="p1">Some features include swear filtering, generate random facts and quotes and some
+            basic unit conversion.</p>
+          <div class="button-container">
+            <button class="viewCode">
+              <a href="https://github.com/AuraCodez/DiscordBotGeneral/" target="_blank" rel="noopener noreferrer">View
+                Code</a>
+            </button>
+
+          </div>
+
+
+        </article>
+      </div>
+      <div class="project-3">
+        <article>
+          <h3 class="teal-header">Guess The Number</h3>
+          <p class="p1">Developed an number guessing game using android studio. User has to guess the
+            number
+            between a range of numbers and has three different modes of easy medium and hard.</p1>
+          <div class="button-container">
+            <button class="viewCode">
+              <a href="https://github.com/AuraCodez/guessthenumber/" target="_blank" rel="noopener noreferrer">View
+                Code</a>
+            </button>
+            <button class="viewDemo">
+              <a href="https://imgur.com/a/VApzeWd" target="_blank" rel="noopener noreferrer">Video Demo</a>
+            </button>
+          </div>
+        </article>
+      </div>
+      <div class="project-4">
+        <article>
+          <h3 class="teal-header">Conversion App</h3>
+          <p class="p1">Created an Android app using Android Studio, which is programmed in Kotlin and Java (I have
+            versions for both). The app
+            allows users to convert
+            units and currencies commonly used in daily life.</p>
+          <p class="p1">Additionally, I am working on adding a Morse Code Converter feature to the app as a bonus
+            feature.
+          </p>
+          <div class="button-container">
+            <button class="viewCode">
+              <a href="https://github.com/AuraCodez/UnitConverterApp/" target="_blank" rel="noopener noreferrer">View
+                Code</a>
+            </button>
+
+          </div>
+        </article>
+      </div>
+      <div class="project-5">
+        <article>
+          <h3 class="teal-header">Dodging Things</h3>
+          <p class="p1">Created a Pygame game featuring a player character that can move, jump, and detect
+            collisions, as well as enemies
+            and power-ups.</p>
+          <p class="p1">User must avoid getting hit by monsters, character can shoot soccer or basketballs
+            to
+            destroy monsters and score points.</p>
+          <div class="button-container">
+            <button class="viewCode">
+              <a href="https://github.com/AuraCodez/DodgingThings/" target="_blank" rel="noopener noreferrer">View
+                Code</a>
+            </button>
+
+          </div>
+        </article>
+
+
+
+
+
+        <section id="resume">
+          <h2 style="color:#3112FC; font-size: 32px;"></h2>
+          <a class="wrapper">
+            <a href="https://drive.google.com/file/d/1-tov9QvjA3-_lGZ9MHo6M-G2yDbC7Ida/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer"><img src="src/resume-logo.png" alt="Resume" width="75" height="75"></a>
+          </a>
+
+          <a class="wrapper">
+            <a href="https://github.com/AuraCodez" target="_blank" rel="noopener noreferrer"><img src="src/index.png"
+                alt="git" width="75" height="75"></a>
+          </a>
+
+
+        </section>
 
 
   </body>
